@@ -16,11 +16,12 @@ The primary function for interfacing with the NumberCounter. Simply sets its tar
 function Counter:Destroy()
 Destroys the NumberCounter object and disconnects all functions. Leaves the original TextLabel intact.
 
-Properties
+Properties:
+
 number Time - The Amount of Time that the NumberCounter will tween to it's new value over.
 
 string Prefix - The string prefix to be appended before the number
 
-number Value - The Target Value of the number counter. Setting NumberCounter.Value directly is not advised as it doesn't call any update functions and will be overidden on the number :UpdateValue call.
+number Value - The Target Value of the number counter. Setting NumberCounter.Value directly is not advised as it doesn't call any update functions and will be overidden on the next :UpdateValue call.
 
 string Format - Either "Comma" or "Abbrev" for the type of string formatting to be done on the displayed number.
